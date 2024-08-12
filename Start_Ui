@@ -15,7 +15,7 @@ class _getstartedState extends State<getstarted> {
     double screenHeight = MediaQuery.of(context).size.height;
 
     // Set the width and height of the image based on screen size
-    double imageWidth = screenWidth * 0.9; // 90% of screen width
+    double imageWidth = screenWidth * 0.9; 
     double imageHeight = screenHeight * 0.5;
     // 50% of screen height
     double topPadding = screenHeight * 0.05;
