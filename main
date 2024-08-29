@@ -1,0 +1,24 @@
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:todo/home.dart';
+import 'package:todo/routes.dart';
+import 'package:todo/start.dart';
+
+void main(){
+  runApp(Myapp());
+}
+class Myapp extends StatelessWidget {
+  const Myapp({super.key});
+  @override
+  Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(statusBarColor: Colors.transparent));
+    return MaterialApp(
+      themeMode: ThemeMode.light,
+      debugShowCheckedModeBanner: false,
+      routes: {
+        "/": (context) =>getstarted(),
+        Myroute.homeroute: (context) => Home(),
+      },
+    );
+  }
+}
