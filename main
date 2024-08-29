@@ -16,7 +16,7 @@ class Myapp extends StatelessWidget {
       themeMode: ThemeMode.light,
       debugShowCheckedModeBanner: false,
       routes: {
-        "/": (context) =>getstarted(),
+        "/": (context) => getstarted(),
         Myroute.homeroute: (context) => Home(),
       },
     );
